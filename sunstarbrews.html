@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stardrip Tartlets Redirect</title>
+  <script>
+    window.onload = function () {
+      // Get current local time from user's device
+      const now = new Date();
+      const hours = now.getHours();
+
+     if (hours >= 6 && hours < 10) {
+        redirectURL = "https://yoursite.com/openingroast.html"; // Morning
+      } else if (hours >= 11 && hours < 14) {
+        redirectURL = "https://yoursite.com/middayblend.html"; // Midday
+      } else if (hours >= 15 && hours < 20) {
+        redirectURL = "https://yoursite.com/twilightbloom.html"; // Twilight
+      } else if (hours >= 21 || hours < 3) {
+        redirectURL = "https://yoursite.com/starlightsteep.html"; // Night
+      } else {
+        redirectURL = "https://yoursite.com/stalecrust.html"; // Glitch crust
+      }
+
+      window.location.href = redirectURL;
+    };
+  </script>
+</head>
+<body>
+  <p> Clarity in a cup. Melody in the mist.... 🫐⏳</p>
+<footer>
+  <p style="font-size:smaller; text-align:center; color:#666;">
+    ☕ Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU GPLv3</a>.  
+    Remixers are welcome—preserve lineage, honor scroll rituals, and archive anomaly wisdom.  
+    Fork the magic. Honor the brew. 🌀
+  </p>
+</footer>
+</body>
+</html>
