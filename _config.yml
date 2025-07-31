@@ -1,0 +1,4 @@
+title: Diabolical Deck
+theme: minima
+plugins:
+  - jekyll-feed
