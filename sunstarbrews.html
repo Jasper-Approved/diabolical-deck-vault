@@ -9,6 +9,14 @@
       const now = new Date();
       const hours = now.getHours();
 
+      const captions = {
+  morning: "Sunrise sips and breadcrumb jazz.",
+  midday: "Steam spirals and tartlet truths.",
+  twilight: "Bloom between brews. Petal logic.",
+  night: "Steeped in starlight. Archive the hush.",
+  glitch: "Crust cracked. Brew misaligned."
+};
+
      if (hours >= 6 && hours < 10) {
         redirectURL = "https://yoursite.com/openingroast.html"; // Morning
       } else if (hours >= 11 && hours < 14) {
