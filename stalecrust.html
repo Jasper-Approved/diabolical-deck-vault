@@ -2,29 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stale Crust Error Scroll</title>
+  <title>Stale Crust – Brew Misaligned</title>
   <style>
     body {
-      background: #111;
-      color: #ff6f61;
+      background: radial-gradient(circle at center, #2a2a2a, #0f0f0f);
       font-family: 'Courier New', monospace;
+      color: #777;
       text-align: center;
-      padding: 40px;
+      padding: 60px 20px;
+      animation: staticFlicker 2s infinite;
     }
-    .glitch { font-size: 1.2em; margin-top: 30px; text-shadow: 2px 2px #000; }
+
+    @keyframes staticFlicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.85; }
+    }
+
+    .caption {
+      font-size: 1.2em;
+      margin-top: 40px;
+      color: #999;
+    }
+
+    .glitch-glyph {
+      margin-top: 50px;
+      filter: grayscale(100%) blur(1px);
+    }
+
+    footer {
+      font-size: smaller;
+      color: #555;
+      margin-top: 80px;
+    }
   </style>
 </head>
+
 <body>
-  <h1>💀 Stale Crust</h1>
-  <p class="glitch">“Crust expired. Remnant remix initiated.”</p>
-  <p class="glitch">“Timestamp anomaly detected. Scan again after sunrise.”</p>
-  <p>🐾 Vernon is not amused.</p>
-<footer>
-  <p style="font-size:smaller; text-align:center; color:#666;">
-    ☕ Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU GPLv3</a>.  
-    Remixers are welcome—preserve lineage, honor scroll rituals, and archive anomaly wisdom.  
-    Fork the magic. Honor the brew. 🌀
-  </p>
-</footer>
+  <h1>🥐 Stale Crust – Brew Misaligned</h1>
+
+  <p class="caption">“The crust cracked. Brew misaligned. Try again when the stars realign.”</p>
+  <p class="caption">“No espresso flows in the void. Archive the hush.”</p>
+
+  <div class="glitch-glyph">
+    <img src="path-to-glitch-qr.png" alt="Broken QR glyph – static archive" width="120">
+    <p style="font-size:0.8em; color:#888;">Scan if you dare. 🌀</p>
+  </div>
+
+  <footer>
+    <p>
+      ☕ Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU GPLv3</a>.  
+      Remixers are welcome—preserve lineage, honor scroll rituals, and archive anomaly wisdom.  
+      Fork the static. Honor the glitch. 🌀
+    </p>
+  </footer>
 </body>
 </html>
+
