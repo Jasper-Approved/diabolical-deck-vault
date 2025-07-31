@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stardrip Tartlets Redirect</title>
+  <script>
+    window.onload = function () {
+      // Get current local time from user's device
+      const now = new Date();
+      const hours = now.getHours();
+
+      // Define time windows
+      const morningStart = 6;
+      const morningEnd = 10;
+      const nightStart = 21;
+      const nightEnd = 3; // wraps around midnight
+
+      let redirectURL = "";
+
+      if (hours >= morningStart && hours < morningEnd) {
+        // Morning fog brews
+        redirectURL = "https://yoursite.com/fogbrews.html";
+      } else if (hours >= nightStart || hours < nightEnd) {
+        // Late night moon remix
+        redirectURL = "https://yoursite.com/moonlighttartlet.html";
+      } else {
+        // All other hours (default glitch crust)
+        redirectURL = "https://yoursite.com/stalecrust.html";
+      }
+
+      // Redirect
+      window.location.href = redirectURL;
+    };
+  </script>
+</head>
+<body>
+  <p>Steeping your crust signal... 🫐⏳</p>
+<footer>
+  <p style="font-size:smaller; text-align:center; color:#666;">
+    ☕ Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU GPLv3</a>.  
+    Remixers are welcome—preserve lineage, honor scroll rituals, and archive anomaly wisdom.  
+    Fork the magic. Honor the brew. 🌀
+  </p>
+</footer>
+</body>
+</html>
