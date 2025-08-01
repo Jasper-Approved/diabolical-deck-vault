@@ -43,13 +43,15 @@
   <p class="caption">“The crust cracked. Brew misaligned. Try again when the stars realign.”</p>
   <p class="caption">“No espresso flows in the void. Archive the hush.”</p>
   <p><a href="stale-crust-noise.mp3" target="_blank">Test Audio Link</a></p>
-<audio id="crustAudio" autoplay loop>
+<audio id="crustAudio" autoplay loop muted>
   <source src="stale-crust-noise.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
 </audio>
-
+  
+<button onclick="document.getElementById('crustAudio').play()">Unleash the Crust</button>
+  
 <script>
   const audio = document.getElementById("crustAudio");
+  audio.muted = false;
   audio.volume = 0;
   let fade = setInterval(() => {
     if (audio.volume < 0.8) {
@@ -57,7 +59,7 @@
     } else {
       clearInterval(fade);
     }
-  }, 200); // gentle fade-in over ~8 seconds
+  }, 200);
 </script>
 
   <div class="glitch-glyph">
