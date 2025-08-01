@@ -42,13 +42,13 @@
 
   <p class="caption">“The crust cracked. Brew misaligned. Try again when the stars realign.”</p>
   <p class="caption">“No espresso flows in the void. Archive the hush.”</p>
-<audio id="crustLoop" autoplay loop>
-  <source src="stalecrustnoise.mp3" type="audio/mpeg">
+<audio id="crustAudio" autoplay loop>
+  <source src="StaleCrustNoise.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
 <script>
-  const audio = document.getElementById("crustLoop");
+  const audio = document.getElementById("crustAudio");
   audio.volume = 0;
   let fade = setInterval(() => {
     if (audio.volume < 0.8) {
