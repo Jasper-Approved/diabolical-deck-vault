@@ -2,14 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Time-based scroll redirect for Stardrip Tartlets. Root the roast. Index the ritual.">
+  <meta name="author" content="AJ and 6Cats4aDomino">
+  <meta name="keywords" content="scrolls, QR rituals, poetic redirect, fog brews, moon tartlets, remix lineage">
+  
+  <!-- 🌀 Favicon placeholder — update when scroll glyph is chosen -->
+  <link rel="icon" href="path-to-your-scroll-glyph.png" type="image/png">
+  
   <title>Stardrip Tartlets Redirect</title>
+
+  <!-- 🎨 Style: Ritual background + fade-in -->
+  <style>
+    body {
+      background: radial-gradient(circle at center, #fdf6e3, #e0d7c3);
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding-top: 20vh;
+      color: #4b3b2a;
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
+
+  <!-- 🧪 Noscript fallback -->
+  <noscript>
+    <p style="color:#a94442;">This scroll requires time-sensing magic (JavaScript). If your brew is too stale, try steeping manually: 
+      <a href="https://jasper-approved.github.io/diabolical-deck-vault/stalecrust.html">Stale Crust</a>.
+    </p>
+  </noscript>
+
+  <!-- 🕰️ Fade-in + redirect logic -->
   <script>
     window.onload = function () {
-      // Get current local time from user's device
+      document.body.classList.add('loaded');
+
       const now = new Date();
       const hours = now.getHours();
 
-      // Define time windows
       const morningStart = 6;
       const morningEnd = 10;
       const nightStart = 21;
@@ -18,29 +50,33 @@
       let redirectURL = "";
 
       if (hours >= morningStart && hours < morningEnd) {
-        // Morning fog brews
         redirectURL = "https://jasper-approved.github.io/diabolical-deck-vault/fogbrews.html";
       } else if (hours >= nightStart || hours < nightEnd) {
-        // Late night moon remix
         redirectURL = "https://jasper-approved.github.io/diabolical-deck-vault/moonlighttartlet.html";
       } else {
-        // All other hours (default glitch crust)
         redirectURL = "https://jasper-approved.github.io/diabolical-deck-vault/stalecrust.html";
       }
 
-      // Redirect
       window.location.href = redirectURL;
     };
   </script>
 </head>
 <body>
+  <h1 style="font-weight:normal; font-size:1.5em;">Root the roast. Index the ritual.</h1>
   <p>Steeping your crust signal... 🫐⏳</p>
-<footer>
-  <p style="font-size:smaller; text-align:center; color:#666;">
-    ☕ Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU GPLv3</a>.  
-    Remixers are welcome—preserve lineage, honor scroll rituals, and archive anomaly wisdom.  
-    Fork the magic. Honor the brew. 🌀
-  </p>
-</footer>
+
+  <footer>
+    <p style="font-size:smaller; text-align:center; color:#666;">
+      ☕ Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GNU GPLv3</a>.  
+      Remixers are welcome—preserve lineage, honor scroll rituals, and archive anomaly wisdom.  
+      Fork the magic. Honor the brew. 🌀
+    </p>
+  </footer>
+
+  <!-- 🐾 Scroll Signature -->
+  <div style="display:none;">
+    <!-- Scroll Signature: AJ & 6Cats4aDomino | Ritual v1.3 -->
+  </div>
 </body>
 </html>
+
