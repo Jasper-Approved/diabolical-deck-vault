@@ -10,6 +10,31 @@
   <link rel="icon" href="assets/images/meowchanica-glyph.png" type="image/png">
   
   <title>Sunrise to Starlight Redirect</title>
+
+  <!-- 🎨 Style: Ritual background + fade-in -->
+  <style>
+    body {
+      background: radial-gradient(circle at center, #fdf6e3, #e0d7c3);
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding-top: 20vh;
+      color: #4b3b2a;
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
+
+  <!-- 🧪 Noscript fallback -->
+  <noscript>
+    <p style="color:#a94442;">This scroll requires time-sensing magic (JavaScript). If your brew is too stale, try steeping manually: 
+      <a href="https://jasper-approved.github.io/diabolical-deck-vault/stalecrust.html">Stale Crust</a>.
+    </p>
+  </noscript>
+
+  <!-- 🕰️ Fade-in + redirect logic -->
   <script>
     window.onload = function () {
       // Get current local time from user's device
