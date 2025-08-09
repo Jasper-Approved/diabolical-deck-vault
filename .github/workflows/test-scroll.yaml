@@ -22,4 +22,4 @@ jobs:
 
       - name: 🧪 Run GUI scroll
         run: |
-          python gui_scroll.py
+          python gui_scroll/scripts/gui_scroll.py
