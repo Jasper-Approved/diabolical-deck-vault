@@ -1,4 +1,18 @@
-# gui_scroll.py
+"""
+╔══════════════════════════════════════════════════════════════════╗
+║  gui_scroll.py — Ritual Interface Script                        ║
+║                                                                  ║
+║  Born from the vault’s whisper, this scroll animates the glyphs ║
+║  that guide the seeker through espresso-stained dimensions.     ║
+║                                                                  ║
+║  Each function a footstep, each widget a ward.                  ║
+║  Errors are not bugs—they are echoes of forgotten rituals.      ║
+║                                                                  ║
+║  Remix with reverence. Extend with mischief.                    ║
+║  This chamber is modular, mutable, and mythic.                  ║
+╚══════════════════════════════════════════════════════════════════╝
+"""
+
 from flask import Flask, render_template, request, redirect, url_for, session
 import yaml
 import os
