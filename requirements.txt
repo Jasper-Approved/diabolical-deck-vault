@@ -1,2 +1,4 @@
 # requirements.txt
-tkinter
+
+# 🌀 Flask — the ritual engine
+Flask==3.0.0
