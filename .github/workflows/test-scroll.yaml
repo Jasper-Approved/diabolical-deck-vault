@@ -1,10 +1,11 @@
-name: Test GUI Scroll
+name: 🧪 Test GUI Scroll
 
 on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: 🧿 Checkout code
         uses: actions/checkout@v3
@@ -13,17 +14,17 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-     
-      - name: Install dependencies
-        run: |
-          pip install flask
-      
-      - name: 📦 Install dependencies
+
+      - name: 🌱 Pre-hydrate Flask (ritual primer)
+        run: pip install flask
+
+      - name: 🧪 Create virtualenv + hydrate scroll
         run: |
           python -m venv .venv
           source .venv/bin/activate
           pip install -r requirements.txt
 
-      - name: 🧪 Run GUI scroll
+      - name: 🌀 Serve GUI Scroll with Gunicorn
         run: |
-          python gui_scroll/scripts/gui_scroll.py
+          source .venv/bin/activate
+          gunicorn gui_scroll.scripts.gui_scroll:app --bind 0.0.0.0:8000 --workers 2
