@@ -60,10 +60,7 @@ def render_step():
             yes_button.place(x=150, y=850)
             no_button.place(x=300, y=850)
     else:
-        step_text.set("🧬 Scroll complete.")
-        yes_button.place_forget()
-        no_button.place_forget()
-        next_button.place_forget()
+        show_completion_screen()
 
 def next_step():
     global step_index
