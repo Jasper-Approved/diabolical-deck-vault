@@ -1,1 +1,71 @@
+.caption-block {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.caption {
+  font-size: 1.2em;
+  color: #2c2c2c;
+  text-shadow: 0.5px 0.5px 1px #aaa;
+  margin-bottom: 10px;
+}
+
+.qr-ritual {
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+  color: #555;
+  margin-top: 60px;
+}
+
+.brew-link {
+  font-size: 0.9em;
+  color: #2a2a2a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.brew-link:hover {
+  text-decoration: underline;
+}
+
+.brew-card {
+  background: #f7f5f2;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 320px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.brew-card h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.brew-card img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.brew-card .caption {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.brew-link {
+  font-size: 0.9em;
+  color: #2a2a2a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.brew-link:hover {
+  text-decoration: underline;
+}
 
