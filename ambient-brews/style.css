@@ -1,1 +1,37 @@
+.brew-card {
+  background: #f7f5f2;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 320px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.brew-card h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.brew-card img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.brew-card .caption {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.brew-link {
+  font-size: 0.9em;
+  color: #2a2a2a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.brew-link:hover {
+  text-decoration: underline;
+}
 
