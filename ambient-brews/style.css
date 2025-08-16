@@ -1,3 +1,37 @@
+.caption-block {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.caption {
+  font-size: 1.2em;
+  color: #2c2c2c;
+  text-shadow: 0.5px 0.5px 1px #aaa;
+  margin-bottom: 10px;
+}
+
+.qr-ritual {
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+  color: #555;
+  margin-top: 60px;
+}
+
+.brew-link {
+  font-size: 0.9em;
+  color: #2a2a2a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.brew-link:hover {
+  text-decoration: underline;
+}
+
 .brew-card {
   background: #f7f5f2;
   border: 1px solid #ccc;
